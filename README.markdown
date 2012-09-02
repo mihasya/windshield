@@ -1,5 +1,6 @@
-[[[https://raw.github.com/mihasya/windshield/master/windshield-screenshot.png|float|align=right]]](http://blog.mihasya.com/windshield/example/)
 # Windshield
+
+![screenshot](https://raw.github.com/mihasya/windshield/master/windshield-screenshot.png)
 
 This is a small toy thing for plotting GeoJSON points on a map as they "arrive" over time.
 
