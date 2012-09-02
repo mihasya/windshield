@@ -1,3 +1,4 @@
+<img src="https://raw.github.com/mihasya/windshield/master/windshield-screenshot.png" style="float: right; padding-left: 5px; padding-right: 5px;"/>
 # Windshield
 
 This is a small toy thing for plotting GeoJSON points on a map as they "arrive" over time.
