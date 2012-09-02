@@ -22,7 +22,7 @@ To get you started:
     <script type="text/javascript">
       $(document).ready(function() {
         windshield($("#map")[0], {
-          'cloudMadeApiKey': '<your api key from http://cloudmade.com>',
+          'cloudMadeApiKey': '[your api key from http://cloudmade.com]',
         })
       });
     </script>
@@ -31,6 +31,10 @@ To get you started:
 ## Providing The Data
 
 The configuration object that gets passed in as the second argument has a property called `pointFetchingFn`. This is the function that will supply the points to be rendered on the map. The default is a random point generator, defined at the very top of `windshield.js`.
+
+## Additional Configuration
+
+The configuration object and the parameters to the data fetching function are all documented in `windshield.js`, so I won't dupliate it here. I think it's all fairly straight forward, though I'll update the docblocks or this README if I turn out to be wrong.
 
 ## Hosted example
 
