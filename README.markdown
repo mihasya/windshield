@@ -20,7 +20,7 @@ Then just define a `div` of the size you desire and pass it to the windshield fu
 
 To get you started:
 
-```javascript
+```html
     <script type="text/javascript">
       $(document).ready(function() {
         windshield($("#map")[0], {
