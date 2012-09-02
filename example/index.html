@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Windshield Demo</title>
+    <style type="text/css">
+      /* http://meyerweb.com/eric/tools/css/reset/ */
+      /* v1.0 | 20080212 */
+      html,body,div,span,applet,object,iframe,
+      h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+      a,abbr,acronym,address,big,cite,code,
+      del,dfn,em,font,img,ins,kbd,q,s,samp,
+      small,strike,strong,sub,sup,tt,var,
+      b,u,i,center,
+      dl,dt,dd,ol,ul,li,
+      fieldset,form,label,legend,
+      table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+      body{line-height:1;}
+      ol,ul{list-style:none;}
+      blockquote,q{quotes:none;}
+      blockquote:before,blockquote:after,
+      q:before,q:after{content:'';content:none;}
+      /* remember to define focus styles! */
+      :focus{outline:0;}
+      /* remember to highlight inserts somehow! */
+      ins{text-decoration:none;}
+      del{text-decoration:line-through;}
+      /* tables still need 'cellspacing="0"' in the markup */
+      table{border-collapse:collapse;border-spacing:0;}
+    </style>
+
+    <style type="text/css">
+      body,html {
+        height:100%;
+        overflow:hidden;
+        background-color:rgb(47,47,47);
+        background-color: #063049;
+        font-family:Helvetica;
+        color:rgb(230,230,230);
+      }
+      /* Map compass tools */
+      .compass .back {
+        fill: #000;
+        fill-opacity: .75;
+      }
+
+      .compass .fore {
+        stroke: #c;
+        stroke-width: 1.5px;
+      }
+
+      .compass rect.back.fore {
+        fill: #fff;
+        fill-opacity: .3;
+        stroke: #eee;
+        stroke-width: 1px;
+        shape-rendering: crispEdges;
+      }
+
+      .compass .direction {
+        fill: none;
+      }
+
+      .compass .chevron {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 5px;
+      }
+
+      .compass .zoom .chevron {
+        stroke-width: 4px;
+      }
+
+      .compass .active .chevron, .compass .chevron.active {
+        stroke: #fff;
+      }
+
+      .compass.active .active .direction {
+        fill: #999;
+      }
+
+      #map {
+        width:100%;
+        height:100%;
+      }
+      
+      #nav {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 5px;
+        background: #111111;
+        border-top: #888888;
+        border-left: #888888;
+        color: #888888;
+      }
+
+      #nav a {
+        color: #888888;
+      }
+      g circle {
+        fill: #aa0000;
+        stroke: #fafafa;
+        stroke-width: 3px;`
+      }
+    </style>
+    <script type="text/javascript" src="polymaps.min.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="windshield.js"></script>
+  </head>
+  <body>
+    <div id="map">
+    </div>
+    <div id="nav">
+        <strong>Windshield Demo</strong> <a href="http://github.com/mihasya/windshield">source</a>
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        windshield($("#map")[0], {
+          'cloudMadeApiKey': '995d1fef8c974470a6d7c99d6741fbd0',
+          'jumpIntervalMs': 0
+        })
+      });
+    </script>
+  </body>
+</html>
