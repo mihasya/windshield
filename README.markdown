@@ -8,7 +8,7 @@ Since the decommissioning of the original SimpleGeo services, the code had been 
 
 The front-end code turned out to be pretty easy to make generic, so here it is.
 
-# Usage
+## Usage
 
 You'll need to include jQuery, PolyMaps, and `windshield.js`. I've only tested with jQuery 1.8.1 and PolyMaps 2.5.0.
 
@@ -28,8 +28,10 @@ To get you started:
     </script>
 ```
 
-# Providing The Data
+## Providing The Data
 
 The configuration object that gets passed in as the second argument has a property called `pointFetchingFn`. This is the function that will supply the points to be rendered on the map. The default is a random point generator, defined at the very top of `windshield.js`.
 
+## Hosted example
 
+[http://blog.mihasya.com/windshield/example/](http://blog.mihasya.com/windshield/example/)
