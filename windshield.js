@@ -116,10 +116,13 @@ var windshield = function(mapElement, userConfig) {
 
   // reset timer
   setInterval(function() {
-    // time to reload the page
-    // TODO: clear the points incrementally over time without refreshing the page
+    // time to reset
+    // TODO: clear points out incrementally instead of resetting to 0
     if (pntcnt > conf.maxPoints) {
-      window.location.reload();
+      $("circle").each(function(index, el) {
+        $(el.parentNode.parentNode.parentNode).remove()
+      });
+      pntcnt = 0;
     }
     if (conf.jumpIntervalMs != 0) {
         // time to recenter
