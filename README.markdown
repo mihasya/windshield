@@ -4,7 +4,7 @@
 
 This is a small toy thing for plotting GeoJSON points on a map as they "arrive" over time.
 
-The bulk of this code was written by Jon Rohan as part of a dashboard for SimpleGeo for displaying what locations users were targeting their APIs. It would be displayed on our downstairs lounge TV most of the time.
+The bulk of this code was written by [Jon Rohan](https://github.com/jonrohan) as part of a dashboard for SimpleGeo for displaying what locations users were targeting their APIs. It would be displayed on our downstairs lounge TV most of the time.
 
 Since the decommissioning of the original SimpleGeo services, the code had been rotting in a repo somewhere. During a Free Friday at Urban Airship (see [here](http://blogs.atlassian.com/2010/11/shipitday_in_the_wild/) for an explanation), Neil Walker and I decided to bring the dashboard back and display some of the UA-specific geo data on it.
 
